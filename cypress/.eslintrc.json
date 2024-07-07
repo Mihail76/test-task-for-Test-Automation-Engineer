@@ -1,0 +1,23 @@
+{
+  "extends": ["../.eslintrc.base"],
+  "plugins": ["cypress"],
+  "parserOptions": {
+    "project": "cypress/tsconfig.json",
+    "sourceType": "module",
+    "tsconfigRootDir": "."
+  },
+  "overrides": [
+    {
+      "files": ["cypress/**"],
+      "rules": {
+        "import/no-extraneous-dependencies": [
+          "error",
+          {
+            "devDependencies": ["cypress/**"]
+          }
+        ],
+        "jest/valid-expect": "off"
+      }
+    }
+  ]
+}
