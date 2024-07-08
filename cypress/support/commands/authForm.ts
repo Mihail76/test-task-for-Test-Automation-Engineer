@@ -2,7 +2,7 @@ import { Given, Then,  } from '@badeball/cypress-cucumber-preprocessor';
 import dom from '../dom';
 
 const givenCommand1 = {
-  commandId: 'Пользователь запустил клиент' as const,
+  commandId: 'Пользователь открыл страницу авторизации github.com' as const,
   action() {
     Given(this.commandId, () => {
       cy.visit('https://github.com/login');

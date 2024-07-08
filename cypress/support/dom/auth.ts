@@ -1,4 +1,4 @@
-import { CLASS_AUTH_FORM } from 'cypress/fixtures/auth';
+import { CLASS_AUTH_FORM } from '../../fixtures/auth';
 import type { TOptions } from './types';
 
 const getByClassName = (className: string, options?: TOptions) => {
