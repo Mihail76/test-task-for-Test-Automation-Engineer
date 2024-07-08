@@ -1,14 +1,3 @@
 {
-  "extends": "../tsconfig.base.json",
-  "compilerOptions": {
-    "baseUrl": "../",
-    "paths": {
-      "@badeball/cypress-cucumber-preprocessor/*": [
-        "./node_modules/@badeball/cypress-cucumber-preprocessor/dist/subpath-entrypoints/*"
-      ]
-    },
-    "types": ["cypress", "node", "cypress-real-events"],
-    "skipLibCheck": true
-  },
-  "include": ["cypress.config.ts", "../cypress"]
+  "extends": "../tsconfig.cypress.json"
 }

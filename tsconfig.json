@@ -4,9 +4,12 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": ["src/*"],
+      "@badeball/cypress-cucumber-preprocessor/*": [
+        "./node_modules/@badeball/cypress-cucumber-preprocessor/dist/subpath-entrypoints/*"
+      ]
     },
     "types": ["node"]
   },
-  "include": ["src"]
+  "include": ["src", "cypress.config.ts", "typings.d.ts"]
 }

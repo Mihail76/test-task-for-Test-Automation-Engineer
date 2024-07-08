@@ -1,4 +1,4 @@
-import { Given, Then,  } from '@badeball/cypress-cucumber-preprocessor';
+import { Given, Then } from '@badeball/cypress-cucumber-preprocessor';
 import dom from '../dom';
 
 const givenCommand1 = {
@@ -25,7 +25,6 @@ const thenCommand1 = {
 
 const ThenCommands = {
   [thenCommand1.commandId]: thenCommand1.action.bind(thenCommand1),
-
 };
 const auth = {
   Then: ThenCommands,

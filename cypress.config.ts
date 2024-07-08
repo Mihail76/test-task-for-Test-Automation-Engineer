@@ -1,4 +1,4 @@
-
+/* eslint-disable import/no-extraneous-dependencies */
 /// <reference types="cypress" />
 import cucumber from '@badeball/cypress-cucumber-preprocessor';
 import { createEsbuildPlugin } from '@badeball/cypress-cucumber-preprocessor/esbuild';
@@ -14,7 +14,7 @@ export default {
     viewportHeight: 720,
     viewportWidth: 1280,
     videoCompression: 1,
-    pageLoadTimeout: 300000,
+    pageLoadTimeout: 300_000,
     async setupNodeEvents(
       cypressOn: Cypress.PluginEvents,
       config: Cypress.PluginConfigOptions,

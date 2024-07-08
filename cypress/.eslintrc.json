@@ -6,18 +6,7 @@
     "sourceType": "module",
     "tsconfigRootDir": "."
   },
-  "overrides": [
-    {
-      "files": ["cypress/**"],
-      "rules": {
-        "import/no-extraneous-dependencies": [
-          "error",
-          {
-            "devDependencies": ["cypress/**"]
-          }
-        ],
-        "jest/valid-expect": "off"
-      }
-    }
-  ]
+  "rules": {
+    "import/no-extraneous-dependencies": "off"
+  }
 }

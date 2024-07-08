@@ -3,6 +3,6 @@
   "src/**/*.{ts,tsx}": "tsc-files --noEmit",
   "src/**/*.{js,jsx,ts,tsx,css,scss,md}": "prettier --write --ignore-unknown",
   "cypress/**/*.{js,jsx,ts,tsx}": "eslint --cache --fix --config ./cypress/.eslintrc.json --ext ts,tsx --ignore-path .gitignore --report-unused-disable-directives --max-warnings 0",
-  "cypress/**/*.{ts,tsx}": "tsc-files --noEmit",
+  "cypress/**/*.{ts,tsx}": "tsc-files --noEmit --project ./tsconfig.cypress.json",
   "cypress/**/*.{js,jsx,ts,tsx,css,scss,md}": "prettier --write --ignore-unknown"
 }
