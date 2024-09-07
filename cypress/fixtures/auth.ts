@@ -1,1 +1,1 @@
-export const CLASS_AUTH_FORM = 'auth-form-body';
+export const CLASS_AUTH_FORM = 'bg-light';
